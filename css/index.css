@@ -27,3 +27,33 @@
         font-size: 26px;
     }
 }
+
+.rowposter {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth; /* Adiciona um efeito suave ao rolar horizontalmente */
+  }
+  
+  .rowposter a {
+    cursor: pointer; /* Mudei para pointer, que é mais comum em links */
+    display: inline-block; /* Garante que o link se comporte corretamente ao redor da imagem */
+  }
+  
+  .rowimg:hover {
+    transform: scale(1.1); /* A escala de 1.1 em vez de 1.10, pois não há necessidade de ter dois dígitos */
+  }
+  
+  .rowposter::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+  }
+  
+  .rowposter a img {
+    margin-right: 10px;
+    border-radius: 20px;
+    box-sizing: border-box; /* Ajustado para o box-sizing correto */
+    transition: transform 450ms;
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
